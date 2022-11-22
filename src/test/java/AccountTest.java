@@ -15,6 +15,7 @@ public class AccountTest {
     public void setUp() {
         account = new SavingsAccount(4000, 1000, "Якименко Олеся");
     }
+
     @Test
     @DisplayName("Оплатить 3000")
     public void savingsPayOff() {
@@ -25,6 +26,7 @@ public class AccountTest {
     public void setUp1() {
         account = new CreditAccount("Якименко Милина");
     }
+
     @Test
     @DisplayName("Оплатить 3000")
     public void creditPayOff() {
@@ -41,11 +43,6 @@ public class AccountTest {
     public void checkingAdd() {
         Assertions.assertTrue(account.add(3000));
     }
-
-
-
-
-
 
 
 }
